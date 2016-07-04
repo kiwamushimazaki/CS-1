@@ -6,10 +6,18 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    class Program
+    class MainClass
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            string temp;
+            int price;
+
+            Console.Write("価格を入力してください>>>");
+            temp = Console.ReadLine();
+            price = Int32.Parse(temp);
+
+            Console.WriteLine("税込み{0:c}", price * 1.08);
         }
     }
 }
